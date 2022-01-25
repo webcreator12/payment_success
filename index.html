@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/97fe9846b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="left">
+        <h2>My Orders</h2>
+
+        <div class="box">
+            <img src="img/wireframing.jpg" alt="">
+            <h3>Wireframing Kit For Figma</h3>
+            <h6>The Basic Kit</h6>
+            <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <h1>Access this later?</h1>
+        <p>Enter a password below to create a Lemon Squeezy account.
+            Keep track of orders and access downloads at any time.
+        </p>
+        <div class="password_box">
+            <input type="password" name="password" id="password"/>
+            <i class="fas fa-eye" id="changeicon" onclick="viewPassword()"></i>
+        </div>
+        <span>8 characters minimum</span>
+        <button>Create Account</button>
+    </div>
+
+    <div class="right">
+        <img src="img/logo.jpg" alt="">
+        <h2>Order #1021</h2>
+        <div class="order_details">
+            <h4>Status:</h4>
+            <i class="far fa-check-circle" id="status"></i>
+            <h4>Paid</h4>
+            <h4>Date: <span>1 Oct, 14:42</span></h4>
+        </div>
+
+        <button class="accordin">Order Summary<i class="fas fa-chevron-down"></i></button>
+        <div class="panel">
+            <div class="box">
+                <img src="img/wireframing.jpg" alt="">
+                <h3>Wireframing Kit For Figma</h3>
+                <h6>The Basic Kit</h6>
+                <h5>$19.99</h5>
+            </div>
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td id="center"></td>
+                    <td id="right">$19.19</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td id="center">Pizza20</td>
+                    <td id="right">-$5.00</td>
+                </tr>
+                <tr>
+                    <td>VAT (20%)</td>
+                    <td id="center"></td>
+                    <td id="right">$3.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="center"></td>
+                    <td id="right">#17.12</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordin">Files <span>(2)</span><i class="fas fa-chevron-down"></i></button>
+        <div class="panel">
+            <div class="box">
+                <img src="img/fig.jpg" alt="">
+                <h3>Wireframing-kit-for-figma.fig</h3>
+                <h6>8.3MB</h6>
+                <button>Download</button>
+            </div>
+            <div class="box">
+                <img src="img/txt.jpg" alt="">
+                <h3>Readme.txt</h3>
+                <h6>156KB</h6>
+                <button>Download</button>
+            </div>
+        </div>
+
+        <button class="accordin">Licenses <span>(1)</span><i class="fas fa-chevron-down"></i></button>
+        <div class="panel">
+            <div class="box">
+                <img src="img/wireframing.jpg" alt="">
+                <h3>BADAA81E-D3E64CE23-B5834YTB</h3>
+                <h6>Expires on 1 Oct 2021 Active(1/5)</h6>
+                <h5>...</h5>
+            </div>
+        </div>
+
+        <button class="accordin">Timeline<i class="fas fa-chevron-down"></i> </button>
+        <div class="panel">
+            <div class="box_track">
+                <i class="fab fa-telegram-plane"></i>
+                <h2>Email receipt sent</h2>
+                <h3>1 Oct 2020, 14:43</h3>
+                <i class="fas fa-arrow-right" id="right_side"></i>
+                <h4>emailaddress@gmail.com</h4>
+            </div>
+            <hr>
+            <div class="box_track">
+                <i class="far fa-check-circle" id="status"></i>
+                <h2>Order Created</h2>
+                <h3>1 Oct 2020, 14:42</h3>
+                <h4>+$17.99</h4>
+                <h3 id="right">VISA * 5545</h3>
+            </div>
+        </div>
+        <h4>Generate Invoices</h4>
+    </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
